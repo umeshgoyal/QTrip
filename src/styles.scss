@@ -1,1 +1,194 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+  html,
+  body {
+    position: relative;
+  }
+  
+  body {
+    overflow-y: auto;
+    min-height: 100vh;
+  }
+  textarea:focus,
+  input:focus {
+    outline: none;
+  }
+  a {
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+  footer {
+    background: #f1f1f1;
+    width: 100%;
+    padding: 16px 0px;
+    color: #999;
+    vertical-align: bottom;
+    margin-top: 40px;
+    /* width: 100%; */
+    /* height: 2.5rem;   */
+  }
+  
+  .banner {
+    height: 500px;
+    width: 100%;
+    background: #999;
+    margin: 20px 0px;
+  }
+  
+  .content {
+    padding: 20px 0px;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+  }
+  
+  /* ================================== */
+  /* Layout page CSS */
+  /* ================================== */
+  
+  .tile {
+    position: relative;
+    /* TODO: MODULE_CARDS */
+    /* 1. Fill in the required properties. */
+  }
+  .tile img {
+    height: 400px;
+    object-fit: cover
+    /* TODO: MODULE_CARDS */
+    /* 1. Fill in the required properties. */
+  }
+  .tile:hover  .place-overlay{
+    /* TODO: MODULE_CARDS */
+    /* 1. Fill in the required properties. */
+    opacity: 1;
+  }
+  .tile:hover  img{
+    /* TODO: MODULE_CARDS */
+    /* 1. Fill in the required properties. */
+    transform: scale(1.1);
+    filter: brightness(0.7);
+  }
+  
+  /* Hint: Notice the position:absolute and z-index properties. */
+  /* Think about how those in relation to the existing "tile" classes. */
+  .tile-text {
+    position: absolute;
+    z-index: 10;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    left: 0;
+  }
+  .place-overlay{
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    opacity: 0;
+    background: transparent;
+    width: 100%;
+  }
+  
+  .hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("/assets/img/showcase/1.jpg");
+      height: 400px;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    /* TODO: MODULE_LAYOUT */
+    /* 1. Set a specific height. */
+    /* 2. Position and center the image to scale nicely on all screens. */
+  }
+  
+  .hero-subheading {
+    font-size: 24px;
+    font-weight: 100;
+    position: absolute;
+    top: 25%;
+    
+    text-align:center;
+  }
+  .hero-input {
+    width: 80%;
+    height: 50px;
+    padding: 16px;
+    border-radius: 8px;
+    border: none;
+  }
+  
+  .nav-link {
+    margin-right: 36px;
+  }
+  
+  /* ================================== */
+  /* Adventures grid page CSS */
+  /* ================================== */
+  
+  .adventure-card {
+    
+    /* TODO: MODULE_ADVENTURES_GRID */
+    /* 1. Fill in the required properties. */
+  }
+  .adventure-card img {
+    /* TODO: MODULE_ADVENTURES_GRID */
+    /* 1. Fill in the required properties. */
+    height:300px;
+    
+  }
+  .adventure-card img:hover {
+    /* TODO: MODULE_ADVENTURES_GRID */
+    /* 1. Fill in the required properties. */
+    filter: brightness(0.6);
+    box-shadow: 0 0 15px #ffee10;
+  
+  }
+  
+  /* ================================== */
+  /* Adventure details page CSS */
+  /* ================================== */
+  
+  .adventure-detail-card {
+    border: 1px solid gray;
+    padding: 20px;
+    margin-bottom: 20px;
+    /* TODO: MODULE_ADVENTURE_DETAILS */
+    /* 1. Fill in the required properties. */
+  
+  }
+  
+  .adventure-card-image {
+      width: inherit;
+      margin-bottom: 10px;
+    /* TODO: MODULE_ADVENTURE_DETAILS */
+    /* 1. Fill in the required properties. */
+  }
+  .adventure-card-image:hover {
+      filter: brightness(0.8);
+    /* TODO: MODULE_ADVENTURE_DETAILS */
+    /* 1. Fill in the required properties. */
+  }
+  .experience-content ul li {
+    margin-left: 16px;
+    padding: 0;
+  }
+  .detail{
+      padding: 20px;
+      border: 1px solid black;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    /* For desktops phones: */
+    #reservation {
+      width: 400px;
+      position: fixed;
+    }
+  }
+  
